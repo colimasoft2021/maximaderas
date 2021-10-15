@@ -7,8 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-          Your enviroment is  {process.env.REACT_APP_BASE_URL}
+          Hola esto es react
         </p>
         <a
           className="App-link"
