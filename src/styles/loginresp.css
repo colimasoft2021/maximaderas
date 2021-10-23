@@ -1,0 +1,167 @@
+@import './globals.css';
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    margin-top: 8%;
+}
+
+.titulo {
+    margin-bottom: 60px;
+}
+
+.container-form {
+    width: 100%;
+    height: 83%;
+    background: #ffffff;
+    box-shadow: 0px 20px 35px rgba(15, 84, 138, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+}
+
+
+.input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #12AD52;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 10%;
+    padding-left: 20px;
+}
+
+.text, .text-contraseña  {
+    position: absolute;
+    left: 20%;
+    margin-top: -5%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.text-contraseña{
+    margin-top: 12% !important;
+}
+
+@media screen and (max-width:500px) {
+    .container-form {
+        width: 87%;
+        height: 65%;
+    }
+
+    .input {
+        margin-bottom: 20%;
+        width: 70%;
+        height: 41px;
+    }
+
+    .text {
+        position: absolute;
+        left: 57px;
+        margin-top: -37px;
+        font-size: 16px;
+    }
+
+    .text-contraseña {
+        position: absolute;
+        left: 57px;
+        margin-top: -10%;
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 15px !important;
+        height: 48px !important;
+        width: 70% !important;
+    }
+
+    .recordarContra {
+        margin-top: 19% !important;
+        position: absolute;
+        right: 49px !important;
+        font-size: small;
+    }
+
+    p{
+        font-size: smaller;
+    }
+    .text-contraseña {
+        margin-top: 21% !important;
+    }
+    .error {
+        position: absolute;
+        color: red;
+        margin-top: -20% !important;
+        margin-left: 17% !important;
+        margin-bottom: 5% !important;
+    }
+
+
+}
+
+/* .btn {
+    width: 60%;
+    height: 56px;
+    background: #12AD52;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 11px;
+    border: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+    color: #FFFFFF;
+} */
+
+.recordarContra {
+    margin-top: 8%;
+    position: absolute;
+    right: 20%;
+    color: #12AD52;
+}
+
+.btn:hover, .btn:focus {
+    color: #000;
+    outline: 0;
+
+  }
+
+  .btn {
+    width: 60%;
+    height: 56px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    border: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 37px;
+    color: #FFFFFF;
+    border-color: #12AD52;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #12AD52 inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .btn:hover {
+    background: #fff;
+    box-shadow: 0 0 2px 0 #12AD52;
+    border: 1px solid #12AD52;
+  }
+
+  .error{
+    position: absolute;
+    color: red;
+    margin-top: -10%;
+    margin-left: 21%;
+    margin-bottom: 5%;
+  }
