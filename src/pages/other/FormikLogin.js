@@ -84,7 +84,7 @@ const Login = () => (
               </a>
               <button type="submit" className="btn" >Iniciar sesion</button>
               <p>
-                ¿Aún no tienes una cuenta? <a href="/"><b>REGISTRATE</b></a>
+                ¿Aún no tienes una cuenta? <a href="/register"><b>REGISTRATE</b></a>
               </p>
             </Form>
           </div>

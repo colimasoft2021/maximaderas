@@ -94,7 +94,7 @@ const IconGroup = ({
               </Link>
             </li>
             <li>
-              <Link to={process.env.PUBLIC_URL + "/login-register"}>
+              <Link to={process.env.PUBLIC_URL + "/register"}>
                 Regístrate
               </Link>
             </li>
