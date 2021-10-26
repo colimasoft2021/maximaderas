@@ -52,6 +52,7 @@ const About = lazy(() => import("./pages/other/About"));
 const Contact = lazy(() => import("./pages/other/Contact"));
 const MyAccount = lazy(() => import("./pages/other/MyAccount"));
 const LoginRegister = lazy(() => import("./pages/other/LoginRegister"));
+const Register = lazy(() => import("./pages/other/Register"));
 
 
 
@@ -185,6 +186,10 @@ const App = (props) => {
                 <Route
                   path={process.env.PUBLIC_URL + "/login-register"}
                   component={LoginRegister}
+                />
+                <Route
+                  path={process.env.PUBLIC_URL + "/register"}
+                  component={Register}
                 />
 
                 <Route
