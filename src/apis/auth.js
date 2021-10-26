@@ -18,8 +18,6 @@ export function loginAPI (data) {
 
 // REGISTER API
 export function registerAPI (data) {
-    console.log(data)
-    return true;
     const URL = `${baseURL}/save-user`;
     return axios.post(URL, {data}, headers)
     .then((response) => {
