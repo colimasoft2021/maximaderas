@@ -7,18 +7,13 @@ import { multilanguage, loadLanguages } from "redux-multilanguage";
 import { connect } from "react-redux";
 import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
 
-
 // home pages
 const Home = lazy(() => import("./pages/home/Home"));
-
-
 
 // shop pages
 const Herrajes = lazy(() => import("./pages/shop/Herrajes"));
 const Tableros = lazy(() => import("./pages/shop/Tableros"));
-const Maderas  = lazy(() => import("./pages/shop/Maderas"));
-
-
+const Maderas = lazy(() => import("./pages/shop/Maderas"));
 
 // product pages
 const Product = lazy(() => import("./pages/shop-product/Product"));
@@ -34,9 +29,6 @@ const ProductFixedImage = lazy(() =>
   import("./pages/shop-product/ProductFixedImage")
 );
 
-
-
-
 // blog pages
 const BlogStandard = lazy(() => import("./pages/blog/BlogStandard"));
 const BlogNoSidebar = lazy(() => import("./pages/blog/BlogNoSidebar"));
@@ -45,16 +37,14 @@ const BlogDetailsStandard = lazy(() =>
   import("./pages/blog/BlogDetailsStandard")
 );
 
-
-
 // other pages
 const About = lazy(() => import("./pages/other/About"));
 const Contact = lazy(() => import("./pages/other/Contact"));
 const MyAccount = lazy(() => import("./pages/other/MyAccount"));
 const LoginRegister = lazy(() => import("./pages/other/LoginRegister"));
 const Register = lazy(() => import("./pages/other/Register"));
-
-
+const RecoveryPassword = lazy(() => import("./pages/other/RecoveryPassword"));
+const NuevaClave = lazy(() => import("./pages/other/CrearNuevaClave"));
 
 const Cart = lazy(() => import("./pages/other/Cart"));
 const Wishlist = lazy(() => import("./pages/other/Wishlist"));
@@ -70,8 +60,8 @@ const App = (props) => {
         languages: {
           en: require("./translations/english.json"),
           fn: require("./translations/french.json"),
-          de: require("./translations/germany.json")
-        }
+          de: require("./translations/germany.json"),
+        },
       })
     );
   });
@@ -104,9 +94,6 @@ const App = (props) => {
                   component={Home}
                 />
 
-
-
-
                 {/* Shop pages */}
                 <Route
                   path={process.env.PUBLIC_URL + "/herrajes"}
@@ -116,13 +103,10 @@ const App = (props) => {
                   path={process.env.PUBLIC_URL + "/tableros"}
                   component={Tableros}
                 />
-                                <Route
+                <Route
                   path={process.env.PUBLIC_URL + "/maderas"}
                   component={Maderas}
                 />
-
-
-
 
                 {/* Shop product pages */}
                 <Route
@@ -214,6 +198,16 @@ const App = (props) => {
                   component={NotFound}
                 />
 
+                <Route
+                  path={process.env.PUBLIC_URL + "/recuperacion-clave"}
+                  component={RecoveryPassword}
+                />
+
+                <Route
+                  path={process.env.PUBLIC_URL + "/clave-nueva"}
+                  component={NuevaClave}
+                />
+
                 <Route exact component={NotFound} />
               </Switch>
             </Suspense>
@@ -225,7 +219,7 @@ const App = (props) => {
 };
 
 App.propTypes = {
-  dispatch: PropTypes.func
+  dispatch: PropTypes.func,
 };
 
 export default connect()(multilanguage(App));
