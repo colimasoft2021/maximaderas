@@ -48,12 +48,12 @@ const ProductGridSingleFive = ({
             </Link>
             {product.discount || product.new ? (
               <div className="product-img-badges">
-                {product.discount ? (
+                {/* {product.discount ? (
                   <span className="pink">-{product.discount}%</span>
                 ) : (
                   ""
                 )}
-                {product.new ? <span className="purple">New</span> : ""}
+                {product.new ? <span className="purple">New</span> : ""} */}
               </div>
             ) : (
               ""
@@ -85,7 +85,7 @@ const ProductGridSingleFive = ({
                   )}
                 </div>
                 <div className="product-action-3">
-                  <div className="pro-same-action pro-wishlist">
+                  {/* <div className="pro-same-action pro-wishlist">
                     <button
                       className={wishlistItem !== undefined ? "active" : ""}
                       disabled={wishlistItem !== undefined}
@@ -98,7 +98,7 @@ const ProductGridSingleFive = ({
                     >
                       <i className="fa fa-heart-o" />
                     </button>
-                  </div>
+                  </div> */}
                   <div className="pro-same-action pro-cart">
                     {product.affiliateLink ? (
                       <a
@@ -130,8 +130,8 @@ const ProductGridSingleFive = ({
                         }
                         title={
                           cartItem !== undefined
-                            ? "Added to cart"
-                            : "Add to cart"
+                            ? "Agregado Al Carrito"
+                            : "Añadir Al Carrito"
                         }
                       >
                         {" "}

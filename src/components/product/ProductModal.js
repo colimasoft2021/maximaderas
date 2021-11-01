@@ -301,7 +301,7 @@ function ProductModal(props) {
                           disabled={productCartQty >= productStock}
                         >
                           {" "}
-                          Add To Cart{" "}
+                          Añadir Al Carrito{" "}
                         </button>
                       ) : (
                         <button disabled>Out of Stock</button>

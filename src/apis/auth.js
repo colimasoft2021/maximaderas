@@ -29,3 +29,18 @@ export function registerAPI (data) {
         return result
     });
 }
+
+
+// CONTACT US
+export function contactUsAPI (data) {
+    const URL = `${baseURL}/send-contact-us`;
+    return axios.post(URL, {data}, headers)
+    .then((response) => {
+        // console.log(response)
+        return response
+    })
+    .then((result) => {
+        // console.log(result)
+        return result
+    });
+}

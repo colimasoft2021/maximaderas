@@ -5,7 +5,7 @@ import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
 import LayoutOne from "../../layouts/LayoutOne";
-import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+// import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 
 const MyAccount = ({ location }) => {
   const { pathname } = location;
@@ -25,7 +25,7 @@ const MyAccount = ({ location }) => {
       </BreadcrumbsItem>
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
+        {/* <Breadcrumb /> */}
         <div className="myaccount-area pb-80 pt-100">
           <div className="container">
             <div className="row">

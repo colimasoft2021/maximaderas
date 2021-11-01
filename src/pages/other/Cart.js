@@ -14,7 +14,7 @@ import {
   deleteAllFromCart
 } from "../../redux/actions/cartActions";
 import LayoutOne from "../../layouts/LayoutOne";
-import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+// import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 
 const Cart = ({
   location,
@@ -47,24 +47,24 @@ const Cart = ({
 
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
+        {/* <Breadcrumb /> */}
         <div className="cart-main-area pt-90 pb-100">
           <div className="container">
             {cartItems && cartItems.length >= 1 ? (
               <Fragment>
-                <h3 className="cart-page-title">Your cart items</h3>
+                <h3 className="cart-page-title">Los Artículos de su Carrito</h3>
                 <div className="row">
                   <div className="col-12">
                     <div className="table-content table-responsive cart-table-content">
                       <table>
                         <thead>
                           <tr>
-                            <th>Image</th>
-                            <th>Product Name</th>
-                            <th>Unit Price</th>
-                            <th>Qty</th>
+                            <th>Imagen</th>
+                            <th>Nombre del Producto</th>
+                            <th>Precio por Unidad</th>
+                            <th>Cantidad</th>
                             <th>Subtotal</th>
-                            <th>action</th>
+                            <th>Acción</th>
                           </tr>
                         </thead>
                         <tbody>

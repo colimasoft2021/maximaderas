@@ -56,19 +56,19 @@ const ProductGridSingle = ({
             </Link>
             {product.discount || product.new ? (
               <div className="product-img-badges">
-                {product.discount ? (
+                {/* {product.discount ? (
                   <span className="pink">-{product.discount}%</span>
                 ) : (
                   ""
                 )}
-                {product.new ? <span className="purple">New</span> : ""}
+                {product.new ? <span className="purple">New</span> : ""} */}
               </div>
             ) : (
               ""
             )}
 
             <div className="product-action">
-              <div className="pro-same-action pro-wishlist">
+              {/* <div className="pro-same-action pro-wishlist">
                 <button
                   className={wishlistItem !== undefined ? "active" : ""}
                   disabled={wishlistItem !== undefined}
@@ -81,7 +81,7 @@ const ProductGridSingle = ({
                 >
                   <i className="pe-7s-like" />
                 </button>
-              </div>
+              </div> */}
               <div className="pro-same-action pro-cart">
                 {product.affiliateLink ? (
                   <a
@@ -106,14 +106,14 @@ const ProductGridSingle = ({
                     }
                     disabled={cartItem !== undefined && cartItem.quantity > 0}
                     title={
-                      cartItem !== undefined ? "Added to cart" : "Add to cart"
+                      cartItem !== undefined ? "Agregado Al Carrito" : "Añadir Al Carrito"
                     }
                   >
                     {" "}
                     <i className="pe-7s-cart"></i>{" "}
                     {cartItem !== undefined && cartItem.quantity > 0
-                      ? "Added"
-                      : "Add to cart"}
+                      ? "Añadido"
+                      : "Añadir Al Carrito"}
                   </button>
                 ) : (
                   <button disabled className="active">

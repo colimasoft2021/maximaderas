@@ -16,7 +16,20 @@ const loginUser = async(values) =>{
   const result = await loginAPI(values)
   console.log(result)
 
-  if(result.data.status === 202){
+  if(result.data.status === 200){
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: '¡Inicio de sesión correctamente!'
+    })
+  }
+  else if(result.data.status === 202){
     const Toast = Swal.mixin({
       toast: true,
       position: 'top-end',
@@ -28,7 +41,8 @@ const loginUser = async(values) =>{
       icon: 'error',
       title: 'El correo no existe'
     })
-  }else if( result.data.status === 404){
+  }
+  else if( result.data.status === 404){
     const Toast = Swal.mixin({
       toast: true,
       position: 'top-end',
@@ -63,6 +77,7 @@ const Login = () => (
     >
       {({ values, errors, touched }) => (
         <div className="container">
+        <h2 className="text-center p-2 font-weight-bold">INICIAR SESIÓN</h2>
           <div className="container-form">
             <Form className="form">
               <div className="row row-input">
@@ -82,7 +97,7 @@ const Login = () => (
               <a href="/" className="recordarContra">
                 ¿Olvidaste tu contraseña?
               </a>
-              <button type="submit" className="btn" >Iniciar sesion</button>
+              <button type="submit" className="btn">Iniciar Sesión</button>
               <p>
                 ¿Aún no tienes una cuenta? <a href="/register"><b>REGISTRATE</b></a>
               </p>

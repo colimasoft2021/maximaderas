@@ -58,12 +58,12 @@ const ProductGridSingleNine = ({
             </Link>
             {product.discount || product.new ? (
               <div className="product-img-badges">
-                {product.discount ? (
+                {/* {product.discount ? (
                   <span className="pink">-{product.discount}%</span>
                 ) : (
                   ""
                 )}
-                {product.new ? <span className="purple">New</span> : ""}
+                {product.new ? <span className="purple">New</span> : ""} */}
               </div>
             ) : (
               ""
@@ -97,7 +97,7 @@ const ProductGridSingleNine = ({
                   }
                   disabled={cartItem !== undefined && cartItem.quantity > 0}
                   title={
-                    cartItem !== undefined ? "Added to cart" : "Add to cart"
+                    cartItem !== undefined ? "Agregado Al Carrito" : "Añadir Al Carrito"
                   }
                 >
                   <i className="fa fa-shopping-cart"></i>
@@ -148,7 +148,7 @@ const ProductGridSingleNine = ({
                 )}
               </div>
             </div>
-            <div className="pro-wishlist-2">
+            {/* <div className="pro-wishlist-2">
               <button
                 className={wishlistItem !== undefined ? "active" : ""}
                 disabled={wishlistItem !== undefined}
@@ -161,7 +161,7 @@ const ProductGridSingleNine = ({
               >
                 <i className="fa fa-heart-o" />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

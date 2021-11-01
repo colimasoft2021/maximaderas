@@ -10,7 +10,7 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
         spaceBottomClass ? spaceBottomClass : ""
       }`}
     >
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
           {featureIconData.map(singleFeature => {
             return (
@@ -21,7 +21,7 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -6,7 +6,7 @@ import { BreadcrumbsItem } from 'react-breadcrumbs-dynamic';
 import { connect } from 'react-redux';
 import { getSortedProducts } from '../../helpers/product';
 import LayoutOne from '../../layouts/LayoutOne';
-import Breadcrumb from '../../wrappers/breadcrumb/Breadcrumb';
+// import Breadcrumb from '../../wrappers/breadcrumb/Breadcrumb';
 import ShopTopbarFilter from '../../wrappers/product/ShopTopbarFilter';
 import ShopProducts from '../../wrappers/product/ShopProducts';
 
@@ -58,7 +58,7 @@ const ShopGridFilter = ({location, products}) => {
 
             <LayoutOne headerTop="visible">
                 {/* breadcrumb */}
-                <Breadcrumb />
+                {/* <Breadcrumb /> */}
 
                 <div className="shop-area pt-95 pb-100">
                     <div className="container">

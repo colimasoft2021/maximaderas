@@ -13,7 +13,7 @@ import {
 } from "../../redux/actions/wishlistActions";
 import { addToCart } from "../../redux/actions/cartActions";
 import LayoutOne from "../../layouts/LayoutOne";
-import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+// import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 
 const Wishlist = ({
   location,
@@ -44,7 +44,7 @@ const Wishlist = ({
 
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
+        {/* <Breadcrumb /> */}
         <div className="cart-main-area pt-90 pb-100">
           <div className="container">
             {wishlistItems && wishlistItems.length >= 1 ? (
@@ -59,7 +59,7 @@ const Wishlist = ({
                             <th>Image</th>
                             <th>Product Name</th>
                             <th>Unit Price</th>
-                            <th>Add To Cart</th>
+                            <th>Añadir Al Carrito</th>
                             <th>action</th>
                           </tr>
                         </thead>
@@ -166,14 +166,14 @@ const Wishlist = ({
                                       }
                                       title={
                                         wishlistItem !== undefined
-                                          ? "Added to cart"
-                                          : "Add to cart"
+                                          ? "Agregado Al Carrito"
+                                          : "Añadir Al Carrito"
                                       }
                                     >
                                       {cartItem !== undefined &&
                                       cartItem.quantity > 0
-                                        ? "Added"
-                                        : "Add to cart"}
+                                        ? "Agregado Al Carrito"
+                                        : "Añadir Al Carrito"}
                                     </button>
                                   ) : (
                                     <button disabled className="active">

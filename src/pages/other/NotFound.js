@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import MetaTags from "react-meta-tags";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import LayoutOne from "../../layouts/LayoutOne";
-import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+// import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 
 const NotFound = ({ location }) => {
   const { pathname } = location;
@@ -24,7 +24,7 @@ const NotFound = ({ location }) => {
       </BreadcrumbsItem>
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
+        {/* <Breadcrumb /> */}
         <div className="error-area pt-40 pb-100">
           <div className="container">
             <div className="row justify-content-center">

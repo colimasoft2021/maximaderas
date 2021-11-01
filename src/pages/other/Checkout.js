@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import { getDiscountPrice } from "../../helpers/product";
 import LayoutOne from "../../layouts/LayoutOne";
-import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+// import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 
 const Checkout = ({ location, cartItems, currency }) => {
   const { pathname } = location;
@@ -27,7 +27,7 @@ const Checkout = ({ location, cartItems, currency }) => {
       </BreadcrumbsItem>
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
+        {/* <Breadcrumb /> */}
         <div className="checkout-area pt-95 pb-100">
           <div className="container">
             {cartItems && cartItems.length >= 1 ? (

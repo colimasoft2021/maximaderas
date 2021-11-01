@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Tab from "react-bootstrap/Tab";
 import Nav from "react-bootstrap/Nav";
 import LayoutOne from "../../layouts/LayoutOne";
-import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+// import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import FormRegister from "./FormRegister";
 
 const Register = ({ location }) => {
@@ -27,7 +27,7 @@ const Register = ({ location }) => {
       </BreadcrumbsItem> */}
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
+        {/* <Breadcrumb /> */}
         <div className="login-register-area pt-100 pb-100">
           <div className="container">
             <div className="row">

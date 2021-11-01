@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import MetaTags from "react-meta-tags";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import LayoutOne from "../../layouts/LayoutOne";
-import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+// import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import SectionTitleWithText from "../../components/section-title/SectionTitleWithText";
 import BannerOne from "../../wrappers/banner/BannerOne";
 import TextGridOne from "../../wrappers/text-grid/TextGridOne";
@@ -29,7 +29,7 @@ const About = ({ location }) => {
       </BreadcrumbsItem>
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb />
+        {/* <Breadcrumb /> */}
 
         {/* section title with text */}
         <SectionTitleWithText spaceTopClass="pt-100" spaceBottomClass="pb-95" />

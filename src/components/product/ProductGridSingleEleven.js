@@ -61,8 +61,8 @@ const ProductGridSingleEleven = ({
             </Link>
             {product.discount || product.new ? (
               <div className="product-img-badges">
-                {product.discount ? <span>-{product.discount}%</span> : ""}
-                {product.new ? <span>New</span> : ""}
+                {/* {product.discount ? <span>-{product.discount}%</span> : ""}
+                {product.new ? <span>New</span> : ""} */}
               </div>
             ) : (
               ""
@@ -96,7 +96,7 @@ const ProductGridSingleEleven = ({
                   }
                   disabled={cartItem !== undefined && cartItem.quantity > 0}
                   title={
-                    cartItem !== undefined ? "Added to cart" : "Add to cart"
+                    cartItem !== undefined ? "Agregado Al Carrito" : "Añadir Al Carrito"
                   }
                 >
                   {" "}
