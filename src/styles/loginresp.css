@@ -1,8 +1,8 @@
 @import './globals.css';
 
 .container {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .form {
@@ -14,8 +14,8 @@
 }
 
 .container-form {
-    width: 100%;
-    height: 83%;
+    width: 100% !important;
+    height: 83% !important;
     background: #ffffff;
     box-shadow: 0px 20px 35px rgba(15, 84, 138, 0.2);
     border-radius: 10px;
@@ -80,6 +80,7 @@
         font-size: 15px !important;
         height: 48px !important;
         width: 70% !important;
+        margin-left: 16% !important;
     }
 
     .recordarContra {
@@ -122,9 +123,8 @@
 } */
 
 .recordarContra {
-    margin-top: 8%;
     position: absolute;
-    right: 20%;
+    right: 14% !important;
     color: #12AD52;
 }
 
@@ -135,6 +135,8 @@
   }
 
   .btn {
+    margin-left: 22%;
+    margin-top: 12%;
     width: 60%;
     height: 56px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -164,4 +166,8 @@
     margin-top: -10%;
     margin-left: 21%;
     margin-bottom: 5%;
+  }
+
+  .registro{
+    margin-left: 22%;
   }

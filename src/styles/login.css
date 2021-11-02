@@ -1,48 +1,99 @@
-@import './globals.css';
+@import "./globals.css";
 
 .recordarContra {
-    margin-top: 8%;
-    position: absolute;
-    right: 20%;
-    color: #12AD52;
+  position: absolute;
+  right: 14%;
+  color: #12ad52;
 }
 
-.btn:hover, .btn:focus {
-    color: #000;
-    outline: 0;
+.btn:hover,
+.btn:focus {
+  color: #000;
+  outline: 0;
+}
 
-  }
+.btn {
+  margin-left: 22%;
+  margin-top: 12%;
+  width: 60%;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 8px;
+  border: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 37px;
+  color: #ffffff;
+  border-color: #12ad52;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #12ad52 inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
 
-  .btn {
-    width: 60%;
-    height: 56px;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    border-radius: 8px;
-    border: white;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 37px;
-    color: #FFFFFF;
-    border-color: #12AD52;
-    color: #fff;
-    box-shadow: 0 0 40px 40px #12AD52 inset, 0 0 0 0 #3498db;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
-  }
-  .btn:hover {
-    background: #fff;
-    box-shadow: 0 0 2px 0 #12AD52;
-    border: 1px solid #12AD52;
-  }
+.btn:hover {
+  background: #fff;
+  box-shadow: 0 0 2px 0 #12ad52;
+  border: 1px solid #12ad52;
+}
 
-.error{
+.error {
   color: red;
 }
-.input{
+
+.input {
   margin-bottom: 5px !important;
 }
-.row-input{
+
+.row-input {
   margin-bottom: 20px !important;
+}
+
+.registro {
+  margin-left: 22%;
+  margin-top: 4%;
+}
+
+.texto {
+  margin-top: 4%;
+}
+
+.input {
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  color: #333;
+  font-size: 14px;
+  height: 45px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    height: 48px !important;
+    width: 70% !important;
+    margin-left: 16% !important;
+  }
+
+  .registro {
+    margin-left: 6%;
+    text-align: center;
+  }
+
+  .eye {
+    top: 247px !important ;
+  }
+}
+
+ .eye {
+  top: 49%;
+  position: absolute;
+  right: 16%;
+}
+
+i:hover {
+  color: #12ad52;
+  cursor: pointer;
 }
